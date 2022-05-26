@@ -1,0 +1,599 @@
+@font-face {
+    font-family: Atkinson_Hyperlegible;
+    src: url(../font/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf);
+}
+
+@font-face {
+    font-family: STIX_Two_Text;
+    src: url(../font/STIX_Two_Text/STIXTwoText-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Atkinson_Hyperlegible;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.heading {
+    font-family: STIX_Two_Text;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.heading h2::after {
+    content: " ";
+    display: block;
+    margin: 10px auto ;
+    border-radius: 10px;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #002590, #41c9c9);
+}
+/* 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e6e4e4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #41c9c9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+
+
+/* Pembuka Header */
+.header {
+    background: linear-gradient(to right, #002590, #41c9c9);
+    box-shadow: 0 0 7px 0 #00000077;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    font-family: STIX_Two_Text;
+    text-transform: uppercase;
+}
+
+.header .container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header .container .header-left a {
+    padding: 1em;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.header .container .header-right nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header .container .header-menu {
+    display: none;
+}
+
+.header .container .header-menu .fas.fa-bars {
+    font-size: 2em;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: -3px;
+    cursor: pointer;
+}
+
+.header .container .header-right {
+    position: relative;
+}
+
+.header .container .header-right nav ul li {
+    display: inline-block;
+    /* margin-right: 10px; */
+    padding: .7em;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .container .header-right nav ul li:hover {
+    transform: scale(1.09);
+}
+
+.header .container .header-right nav ul li a {
+    color: #fff;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+}
+
+.header .container .header-right nav ul li a::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.header .container .header-right nav ul li a:hover::after {
+    bottom: 6px;
+}
+
+.header .container .header-right nav.show {
+    display: block;
+    position: fixed;
+    top: 76px;
+    right: -500px;
+    background: linear-gradient(to right, #002590, #41c9c9);
+    opacity: 0.98;
+    height: 100vh;
+    width: 100%;
+    animation: nav 1.2s ease forwards;
+}
+
+@keyframes nav {
+    to {
+        right: 0;
+    }
+}
+
+.header .container .header-right nav.show ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.header .container .header-right nav.show ul li {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+/* Penutup Header */
+
+
+/* Pembuka Home */
+.home {
+    background: url(../img/background.jpg);
+}
+
+.home .container {
+    height: 570px;
+}
+
+.home .container .home-content {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.home .container .home-content .profile {
+    color: white;
+    text-align: center;
+}
+
+.home .container .home-content .word {
+    margin-top: 20px;
+    color: seashell;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home .container .home-content img {
+    width: 170px;
+    border-radius: 50%;
+    margin-top: 6em;
+    margin-right: auto;
+    margin-left: 2.1em;
+}
+/* Penutup Home */
+
+
+/* Pembuka About */
+.about {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.about .about-content .about-image {
+    margin-bottom: 10px;
+}
+
+.about .about-content .about-image img {
+    width: 200px;
+}
+
+.about .about-content .about-text {
+    padding: 20px;
+    margin-top: -30px;
+}
+
+.about .about-content .about-text {
+    font-weight: 500;
+}
+/* Penutup About */
+
+
+/* Pembuka Skills */
+.skills {
+    height: max-content;
+    border: 1px solid white;
+}
+
+.skills .container .skills-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.skills .container .skills-content.project {
+    margin-top: 5em;
+}
+
+.skills .container .skills-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.skills .container .skills-content .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.skills .container .skills-content .column .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #2179ad;
+}
+
+.skills .container .skills-content .column.image {
+    width: 60%;
+}
+
+.skills .container .skills-content .column .card .image-project {
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+.skills .container .skills-content .column .card .bold {
+    font-weight: 600;
+}
+
+.skills .container .skills-content .column .card p {
+    color: rgb(85, 85, 85);
+}
+
+.skills .container .skills-content .column .card i {
+    margin-top: 10px;
+    font-size: 3em;
+}
+/* Penutup Skills */
+
+
+/* Pembuka Certificate */
+.certificate {
+    height: 700px;
+    border: 1px solid white;
+}
+
+.certificate .container .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.certificate .container .slideshow-container .mySlides {
+    display: none;
+}
+
+.certificate .container .slideshow-container .mySlides img {
+    margin: 3em 0;
+}
+
+.certificate .container .slideshow-container .mySlides .text {
+    color: rgb(85, 85, 85);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.certificate .container .slideshow-container .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background: #2179ad;
+    opacity: .5;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.certificate .container .slideshow-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.certificate .container .slideshow-container .prev:hover, .next:hover {
+    opacity: 1;
+}
+
+.certificate .container .slideshow-container .mySlides.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+/* Penutup Certificate */
+
+
+/* Pembuka Education */
+.education {
+    height: 500px;
+    border: 1px solid white;
+}
+
+.education .container .school-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.education .container .school-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.education .container .school-content.bottom {
+    margin-bottom: 8em;
+}
+
+.education .container .school-content .column {
+    float: left;
+    width: 30%;
+    margin: 2em;
+}
+
+.education .container .school-content .column .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #2179ad;
+}
+
+.education .container .school-content .column .card.big {
+    padding: 50px;
+}
+
+.education .container .school-content .column .card .bold {
+    font-weight: 600;
+}
+
+.education .container .school-content .column .card p {
+    color: rgb(85, 85, 85);
+}
+
+.education .container .school-content .column .card i {
+    margin-top: 10px;
+    font-size: 3em;
+}
+/* Penutup Education */
+
+
+/* Pembuka Contact */
+.contact {
+    height: 1000px;
+    border: 1px solid white;
+}
+
+.contact .container .contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0 5em;
+    padding: 0 10px;
+    text-align: justify;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact .container .contact-us:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact .container .contact-us .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.contact .container .contact-us .column .card {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact .container .contact-us .column .card .icon {
+    margin: 1em auto;
+    background-color: #2179ad;
+    color: #fff;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    line-height: 4em;
+}
+
+.contact .container .contact-us .column .card .icon i {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.contact .container .contact-us .column .card .icon-text {
+    margin-top: 1.3em;
+    color: #000;
+}
+
+.contact .container .contact-us .column .card .icon-text .icon-text-child {
+    margin-top: -.5em;
+    color: #2179ad;
+}
+
+.contact .container .row {
+    margin-top: -2em;
+    margin-bottom: 2em;
+}
+
+.contact .container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact .container .row .box {
+    float: right;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.contact .container .row .box input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #2179ad;
+    outline: none;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.contact .container .row .box input[type=submit] {
+    background-color: #2179ad;
+    border-radius: 5px;
+    color: white;
+    opacity: 1;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact .container .row .box input[type=submit]:hover {
+    opacity: 0.8;
+}
+/* Penutup Contact */
+
+
+/* Pembuka Footer */
+.footer {
+    font-size: .9rem;
+    font-weight: 500;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #002590, #41c9c9);
+    box-shadow: 0 0 7px 0 #00000077;
+    color: #fff;
+    font-family: STIX_Two_Text;
+    text-transform: uppercase;
+}
+/* Penutup Footer */
