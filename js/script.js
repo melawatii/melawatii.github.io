@@ -1,6 +1,3 @@
-// AOS
-AOS.init();
-
 // Navbar Menu
 const nav = document.getElementById('nav');
 const menu = document.getElementById('menu');
@@ -52,3 +49,15 @@ var hariarray = new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at"
 var bulanarray = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
 document.getElementById("hari").innerHTML = hariarray[hari] + " ";
 document.getElementById("tanggal").innerHTML = +tanggal + " " + bulanarray[bulan] + " " + tahun + " ";
+
+
+// form-contact
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyQrUT_ik6fiF0zlHtCot2BTci8jioNQQPYwES5r1gH6DuRsmo8PWiMhurnz_YGz3LGIw/exec'
+    const form = document.forms['melawati-contact-form']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
