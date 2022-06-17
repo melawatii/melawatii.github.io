@@ -566,7 +566,7 @@ li {
     resize: vertical;
 }
 
-.contact .container .row .box input[type=submit] {
+.contact .container .row .box button {
     background-color: #2179ad;
     border-radius: 5px;
     color: white;
@@ -576,7 +576,7 @@ li {
     cursor: pointer;
 }
 
-.contact .container .row .box input[type=submit]:hover {
+.contact .container .row .box button:hover {
     opacity: 0.8;
 }
 /* Penutup Contact */
