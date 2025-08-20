@@ -91,6 +91,27 @@
     <!-- End Header -->
 
     <!-- Home -->
+    <section id="hero" class="relative h-[90vh] bg-cover bg-center bg-no-repeat transition-all duration-1000">
+        <!-- Overlay filter -->
+        <div class="absolute inset-0 bg-[#27374D]/70"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="text-center text-white space-y-6">
+                <!-- Jam -->
+                <div id="clock" class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-widest"></div>
+                
+                <!-- Tanggal -->
+                <div id="date" class="text-base sm:text-lg lg:text-2xl uppercase"></div>
+                
+                <!-- Cuaca -->
+                <div class="mt-4 space-y-1">
+                    <div class="text-xl sm:text-2xl lg:text-3xl font-semibold">🌤 29°C</div>
+                    <div class="text-xs sm:text-sm lg:text-base">Mostly Sunny</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- End Home -->
 
     <!-- Profile -->
@@ -115,5 +136,36 @@
     <!-- End Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script>
+        const images = [
+            "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80", // Hutan
+            "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1600&q=80", // Langit
+            "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80"  // Programmer
+        ];
+
+        let index = 0;
+        const hero = document.getElementById("hero");
+
+        function changeBackground() {
+            hero.style.backgroundImage = `url('${images[index]}')`;
+            index = (index + 1) % images.length;
+        }
+
+        setInterval(changeBackground, 5000); // ganti tiap 5 detik
+        changeBackground();
+
+        // Jam & tanggal
+        function updateClock() {
+            const now = new Date();
+            document.getElementById("clock").innerText = now.toLocaleTimeString("en-GB");
+            document.getElementById("date").innerText = now.toLocaleDateString("en-US", { 
+                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
+            });
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+
 </body>
 </html>
