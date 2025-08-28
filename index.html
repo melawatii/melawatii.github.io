@@ -618,14 +618,110 @@
     <!-- End Certificate -->
 
     <!-- Contact -->
+    <section id="contact" class="py-20 bg-[#F8FAFC] text-[#27374D]">
+    <div class="max-w-6xl mx-auto px-6">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+        <h3 class="text-3xl font-bold uppercase">Contact</h3>
+        <p class="mt-3 text-base text-gray-600">
+            Jika ingin berdiskusi atau berkolaborasi, silakan hubungi saya melalui form atau kontak berikut.
+        </p>
+        <div class="mx-auto mt-5 w-28 h-1 bg-gradient-to-r from-[#27374D] to-[#526D82] rounded"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+            <form id="contact-form" action="https://formspree.io/f/mjkekngo" method="POST" class="space-y-5">
+            
+            <!-- Email -->
+            <div>
+                <label for="email" class="block text-sm font-medium mb-1 text-left">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#526D82]" />
+            </div>
+
+            <!-- Message -->
+            <div>
+                <label for="message" class="block text-sm font-medium mb-1 text-left">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#526D82]"></textarea>
+            </div>
+
+            <!-- Alert -->
+            <div id="alert-box" class="hidden relative p-4 rounded-lg text-sm font-medium pr-10">
+                <button type="button" id="alert-close" class="absolute top-2 right-2 text-gray-600 hover:text-black">
+                ✕
+                </button>
+                <span id="alert-message"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button id="submit-btn" type="submit"
+                class="w-full py-3 bg-[#27374D] text-white rounded-lg font-semibold hover:bg-[#526D82] transition flex items-center justify-center gap-2">
+                <span id="btn-text">Send Message</span>
+                <svg id="btn-spinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                </svg>
+            </button>
+            </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="flex flex-col justify-center space-y-6">
+            <div>
+            <h4 class="font-semibold text-xl mb-2">Get in Touch</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+                Saya terbuka untuk peluang kerja, project freelance, atau sekadar diskusi.
+                Silakan hubungi saya melalui kontak berikut:
+            </p>
+            </div>
+
+            <!-- Info List -->
+            <div class="space-y-4">
+            <div class="flex items-center gap-3">
+                <i data-lucide="mail" class="w-5 h-5 text-[#27374D]"></i>
+                <p class="text-sm text-gray-700">email@example.com</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <i data-lucide="phone" class="w-5 h-5 text-[#27374D]"></i>
+                <p class="text-sm text-gray-700">+62 812-3456-7890</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <i data-lucide="map-pin" class="w-5 h-5 text-[#27374D]"></i>
+                <p class="text-sm text-gray-700">Jakarta, Indonesia</p>
+            </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex gap-5 pt-4">
+            <a href="#" class="text-[#27374D] hover:text-[#526D82]">
+                <i data-lucide="github" class="w-6 h-6"></i>
+            </a>
+            <a href="#" class="text-[#27374D] hover:text-[#526D82]">
+                <i data-lucide="linkedin" class="w-6 h-6"></i>
+            </a>
+            <a href="#" class="text-[#27374D] hover:text-[#526D82]">
+                <i data-lucide="twitter" class="w-6 h-6"></i>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
     <!-- End Contact -->
 
     <!-- Footer -->
     <!-- End Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <script>
+        lucide.createIcons();
+
         const images = [
             "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80", // Hutan
             "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1600&q=80", // Langit
@@ -717,6 +813,52 @@
             showProjectSlide(projectIndex + 1);
             }, 5000);
         }
+
+        const form = document.getElementById("contact-form");
+        const alertBox = document.getElementById("alert-box");
+        const alertMessage = document.getElementById("alert-message");
+        const alertClose = document.getElementById("alert-close");
+        const submitBtn = document.getElementById("submit-btn");
+        const btnText = document.getElementById("btn-text");
+        const btnSpinner = document.getElementById("btn-spinner");
+
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            // Show loading state
+            btnText.textContent = "Sending...";
+            btnSpinner.classList.remove("hidden");
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { Accept: "application/json" }
+            });
+
+            // Reset button
+            btnText.textContent = "Send Message";
+            btnSpinner.classList.add("hidden");
+            submitBtn.disabled = false;
+
+            // Show alert
+            alertBox.classList.remove("hidden");
+
+            if (response.ok) {
+            alertBox.className = "relative p-4 mb-4 text-green-700 bg-green-100 rounded-lg pr-10";
+            alertMessage.textContent = "✅ Your message has been sent successfully!";
+            } else {
+            alertBox.className = "relative p-4 mb-4 text-red-700 bg-red-100 rounded-lg pr-10";
+            alertMessage.textContent = "❌ Oops! Something went wrong. Please try again.";
+            }
+        });
+
+        // Close alert
+        alertClose.addEventListener("click", () => {
+            alertBox.classList.add("hidden");
+        });
+
     </script>
 
 </body>
