@@ -8,11 +8,15 @@
     src: url(../font/STIX_Two_Text/STIXTwoText-VariableFont_wght.ttf);
 }
 
-body {
-    font-family: Atkinson_Hyperlegible;
+html {
+    scroll-behavior: smooth;
 }
 
-.navbar {
-    font-family: STIX_Two_Text;
+body {
+    font-family: Atkinson_Hyperlegible;
+    padding-top: 63px;
+}
 
+.navbar, footer {
+    font-family: STIX_Two_Text;
 }
