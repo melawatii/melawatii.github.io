@@ -198,6 +198,20 @@ const btnSpinner = document.getElementById("btn-spinner");
 form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
+    // Get email value
+    const emailInput = document.getElementById("email");
+    const email = emailInput.value.trim();
+
+    // Regex validasi email
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+        alertBox.className = "relative p-4 mb-4 text-red-700 bg-red-100 rounded-lg pr-10";
+        alertMessage.textContent = "⚠️ Please enter a valid email address.";
+        alertBox.classList.remove("hidden");
+        return;
+    }
+
     // Show loading state on button
     btnText.textContent = "Sending...";
     btnSpinner.classList.remove("hidden");
@@ -221,6 +235,7 @@ form.addEventListener("submit", async function (e) {
     if (response.ok) {
         alertBox.className = "relative p-4 mb-4 text-green-700 bg-green-100 rounded-lg pr-10";
         alertMessage.textContent = "✅ Your message has been sent successfully!";
+        form.reset();
     } else {
         alertBox.className = "relative p-4 mb-4 text-red-700 bg-red-100 rounded-lg pr-10";
         alertMessage.textContent = "❌ Oops! Something went wrong. Please try again.";
