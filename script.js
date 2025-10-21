@@ -25,20 +25,6 @@ setInterval(changeBackground, 5000);
 changeBackground();
 
 
-// ================= CLOCK & DATE =================
-// Function to update clock and date in hero section
-function updateClock() {
-    const now = new Date();
-    document.getElementById("clock").innerText = now.toLocaleTimeString("en-GB");
-    document.getElementById("date").innerText = now.toLocaleDateString("en-US", { 
-        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
-    });
-}
-// Update every second
-setInterval(updateClock, 1000);
-updateClock();
-
-
 // ================= PROJECT CAROUSEL =================
 // Get project carousel element and slide count
 const projectCarousel = document.getElementById("projectCarousel");

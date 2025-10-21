@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Melawati | Web Portfolio</title>
+    <title>Melawati | Portfolio</title>
 
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -13,7 +13,7 @@
 <body>
 
     <!-- Header -->
-    <div class="navbar bg-[#123458] text-[#DDE6ED] shadow-sm font-semibold uppercase tracking-widest fixed top-0 left-0 w-full z-50">
+    <div class="navbar bg-[#030303] text-[#DDE6ED] shadow-sm font-semibold uppercase tracking-widest fixed top-0 left-0 w-full z-50">
         <div class="max-w-screen-xl w-full mx-auto px-6">
             <div class="flex items-center justify-between">
                 <!-- Brand -->
@@ -21,112 +21,104 @@
                     <span>Melawati</span>
                 </div>
 
-                <!-- Menu (desktop) -->
+                <!-- Menu (Desktop) -->
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li>
-                            <a href="#home" class="hover:bg-[#526D82] transition-colors duration-300">Home</a>
+                            <a href="#home" class="hover:bg-[#222222] transition-colors duration-300">Home</a>
                         </li>
 
-                        <!-- About Dropdown (Hover + muncul di bawah navbar) -->
                         <li class="dropdown dropdown-hover dropdown-bottom">
-                            <label tabindex="0" class="flex items-center gap-1 px-4 py-2 cursor-pointer hover:bg-[#526D82] transition-colors duration-300">
+                            <label tabindex="0" class="flex items-center gap-1 px-4 py-2 cursor-pointer hover:bg-[#222222] transition-colors duration-300">
                                 About
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </label>
-                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-[#123458] rounded-box w-40 mt-2">
+                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-[#030303] rounded-box w-40 mt-2">
                                 <li>
-                                    <a href="#profile" class="hover:bg-[#526D82]">Profile</a>
+                                    <a href="#profile" class="hover:bg-[#222222]">Profile</a>
                                 </li>
                                 <li>
-                                    <a href="#journey" class="hover:bg-[#526D82]">Journey</a>
+                                    <a href="#journey" class="hover:bg-[#222222]">Journey</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li>
-                            <a href="#project" class="hover:bg-[#526D82] transition-colors duration-300">Project</a>
+                            <a href="#project" class="hover:bg-[#222222] transition-colors duration-300">Project</a>
                         </li>
 
-                        <!-- Skill Dropdown (Hover + muncul di bawah navbar) -->
                         <li class="dropdown dropdown-hover dropdown-bottom">
-                            <label tabindex="0" class="flex items-center gap-1 px-4 py-2 cursor-pointer hover:bg-[#526D82] transition-colors duration-300">
+                            <label tabindex="0" class="flex items-center gap-1 px-4 py-2 cursor-pointer hover:bg-[#222222] transition-colors duration-300">
                                 Skill
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </label>
-                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-[#123458] rounded-box w-40 mt-2">
+                            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-[#030303] rounded-box w-40 mt-2">
                                 <li>
-                                    <a href="#skill" class="hover:bg-[#526D82]">Tech Stack</a>
+                                    <a href="#skill" class="hover:bg-[#222222]">Tech Stack</a>
                                 </li>
                                 <li>
-                                    <a href="#certificate" class="hover:bg-[#526D82]">Certificate</a>
+                                    <a href="#certificate" class="hover:bg-[#222222]">Certificate</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li>
-                            <a href="#contact" class="hover:bg-[#526D82] transition-colors duration-300">Contact</a>
+                            <a href="#contact" class="hover:bg-[#222222] transition-colors duration-300">Contact</a>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Mobile Menu (klik) -->
+                <!-- Menu (Mobile) -->
                 <div class="navbar-end lg:hidden">
                     <div class="dropdown dropdown-end">
-                        <label tabindex="0" class="btn btn-ghost text-[#DDE6ED]">
+                        <label tabindex="0" class="border border-none active:bg-[#885BF3] hover:bg-[#885BF3] btn btn-ghost text-[#DDE6ED]">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         </label>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#123458] rounded-box w-52">
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#030303] rounded-box w-52">
                             <li>
-                                <a href="#home" class="hover:bg-[#526D82]">Home</a>
+                                <a href="#home" class="hover:bg-[#222222]">Home</a>
                             </li>
                             <li>
                                 <details>
-                                    <summary class="hover:bg-[#526D82] flex items-center justify-between">
+                                    <summary class="hover:bg-[#222222] flex items-center justify-between">
                                         About
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                        </svg>
                                     </summary>
-                                    <ul class="p-2 bg-[#123458] text-[#DDE6ED]">
+                                    <ul class="p-2 bg-[#030303] text-[#DDE6ED]">
                                         <li>
-                                            <a href="#profile" class="hover:bg-[#526D82]">Profile</a>
+                                            <a href="#profile" class="hover:bg-[#222222]">Profile</a>
                                         </li>
                                         <li>
-                                            <a href="#journey" class="hover:bg-[#526D82]">Journey</a>
+                                            <a href="#journey" class="hover:bg-[#222222]">Journey</a>
                                         </li>
                                     </ul>
                                 </details>
                             </li>
                             <li>
-                                <a href="#project" class="hover:bg-[#526D82]">Project</a>
+                                <a href="#project" class="hover:bg-[#222222]">Project</a>
                             </li>
                             <li>
                                 <details>
-                                    <summary class="hover:bg-[#526D82] flex items-center justify-between">
+                                    <summary class="hover:bg-[#222222] flex items-center justify-between">
                                         Skill
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                        </svg>
                                     </summary>
-                                    <ul class="p-2 bg-[#123458] text-[#DDE6ED]">
+                                    <ul class="p-2 bg-[#030303] text-[#DDE6ED]">
                                         <li>
-                                            <a href="#skill" class="hover:bg-[#526D82]">Tech Stack</a>
+                                            <a href="#skill" class="hover:bg-[#222222]">Tech Stack</a>
                                         </li>
                                         <li>
-                                            <a href="#certificate" class="hover:bg-[#526D82]">Certificate</a>
+                                            <a href="#certificate" class="hover:bg-[#222222]">Certificate</a>
                                         </li>
                                     </ul>
                                 </details>
                             </li>
                             <li>
-                                <a href="#contact" class="hover:bg-[#526D82]">Contact</a>
+                                <a href="#contact" class="hover:bg-[#222222]">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -140,21 +132,20 @@
     <!-- Home -->
     <section id="home" class="relative h-[90vh] bg-cover bg-center bg-no-repeat transition-all duration-1000">
         <!-- Overlay filter -->
-        <div class="absolute inset-0 bg-[#123458]/50"></div>
+        <div class="absolute inset-0 bg-[#101012]/70"></div>
 
         <!-- Content -->
         <div class="relative z-10 flex items-center justify-center h-full">
             <div class="text-center text-white space-y-6">
-                <!-- Jam -->
-                <div id="clock" class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-widest"></div>
-                
-                <!-- Tanggal -->
-                <div id="date" class="text-base sm:text-lg lg:text-2xl uppercase"></div>
-                
-                <!-- Cuaca -->
-                <div class="mt-4 space-y-1">
-                    <div class="text-xl sm:text-2xl lg:text-3xl font-semibold">🌤 29°C</div>
-                    <div class="text-xs sm:text-sm lg:text-base">Mostly Sunny</div>
+
+                <div class="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-widest">Hi, I am <span class="text-[#885BF3]">Melawati</span></div>
+
+                <div class="text-base sm:text-lg lg:text-2xl tracking-wider">Web Developer</div>
+
+                <div class="mt-10 animate-bounce mx-auto w-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
                 </div>
             </div>
         </div>
@@ -162,37 +153,38 @@
     <!-- End Home -->
 
     <!-- Profile -->
-    <section id="profile" class="pt-20 bg-[#F1EFEC] text-[#123458]">
+    <section id="profile" class="py-20 bg-[#222222] text-[#DDE6ED]">
         <div class="max-w-screen-xl mx-auto px-6 space-y-20">
 
             <!-- Title -->
             <div class="text-center mb-10">
-                <h3 class="text-xl uppercase font-bold pb-2">Profile</h3>
-                <div class="mx-auto w-24 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
+                <h3 class="text-xl uppercase font-bold pb-2 [text-shadow:0_0_10px_#885BF3]">Profile</h3>
+                <div class="mx-auto w-24 h-1 bg-gradient-to-r from-[#885BF3] to-[#DDE6ED] rounded"></div>
             </div>
 
             <!-- Card -->
-            <div class="grid md:grid-cols-2 gap-12 items-center p-6 md:p-10 bg-white rounded-2xl shadow hover:shadow-lg transition">
+            <div class="grid md:grid-cols-2 gap-12 items-center p-6 md:p-10 bg-[#030303] rounded-2xl drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition">
             
             <!-- Picture -->
             <div class="flex justify-center">
                 <img 
-                    src="/img/ilustration-1.png" 
+                    src="/img/image.jpeg" 
                     alt="Profile" 
-                    class="rounded-2xl w-full max-w-[200px] md:max-w-sm h-auto object-cover"
+                    class="rounded-2xl w-auto max-w-[150px] md:max-w-[200px] h-auto object-cover border-2 border-[#885BF3]"
                 >
             </div>
 
             <!-- Desc -->
             <div class="space-y-6 text-center md:text-left md:pr-10">
-                <p class="leading-relaxed indent-0 md:indent-10 mb-8">
-                    I am a Web Developer specializing in Backend Development with PHP frameworks. Experienced in designing efficient, secure, and scalable systems, while also delivering responsive websites that perform optimally across devices. I am used to collaborating in teams and strive to write clean, structured, and maintainable code. With a strong passion for continuous learning and growth, I am ready to contribute to building functional, scalable web applications that provide real value for both users and businesses.
+                <p class="leading-relaxed mb-8 text-justify tracking-wide">
+                    I am a <strong>Web Developer,</strong> specializing in <span class="text-[#885BF3]">Backend Development</span> with <span class="text-[#885BF3]">PHP frameworks.</span> Experienced in designing efficient, secure, and scalable systems, while also delivering responsive websites that perform optimally across devices. I am used to collaborating in teams and strive to write clean, structured, and maintainable code. With a strong passion for continuous learning and growth, I am ready to contribute to building functional, scalable web applications that provide real value for both users and businesses.
                 </p>
 
                 <div class="flex justify-center md:justify-start">
                     <a 
-                        href="assets/CV.pdf" download
-                        class="inline-flex items-center gap-2 px-6 py-2 bg-[#123458] text-[#DDE6ED] rounded-lg shadow hover:bg-[#526D82] transition-colors"
+                        href="https://drive.google.com/file/d/1DPxfP6iQf17pNmkMHrZ4SmSDxlFsDcTM/view?usp=sharing"
+                        target="_blank"
+                        class="inline-flex items-center gap-2 px-6 py-2 bg-[#222222] text-[#DDE6ED] rounded-lg shadow hover:bg-[#885BF3] transition-colors border-2 border-[#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
@@ -208,98 +200,83 @@
     <!-- End Profile -->
 
     <!-- Journey -->
-    <section id="journey" class="bg-[#DDE6ED] text-[#123458]">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1EFEC" fill-opacity="1" d="M0,192L60,186.7C120,181,240,171,360,170.7C480,171,600,181,720,202.7C840,224,960,256,1080,234.7C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-
+    <section id="journey" class="py-20 bg-[#222222] text-[#DDE6ED]">
         <div class="max-w-screen-xl mx-auto px-6 space-y-20">
 
-            <!-- Journey -->
             <div class="text-center mb-10">
-                <h3 class="text-xl uppercase font-bold pb-2">Journey</h3>
-                <div class="mx-auto w-25 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
+                <h3 class="text-xl uppercase font-bold pb-2 [text-shadow:0_0_10px_#885BF3]">Journey</h3>
+                <div class="mx-auto w-25 h-1 bg-gradient-to-r from-[#885BF3] to-[#DDE6ED] rounded"></div>
             </div>
 
-            <div class="items-center text-lg uppercase font-bold text-[#123458]">
+            <div class="items-center uppercase font-bold text-[#DDE6ED] tracking-wide">
                 <div class="space-y-12">
                     <div class="grid md:grid-cols-2 gap-12">
                         <!-- Education Card -->
-                        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center">
-                            <h3 class="pb-2">Education</h3>
-                            <div class="flex justify-center mb-4">
-                                <svg class="h-20 w-20 text-[#123458]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <div class="py-8 px-4 bg-[#030303] rounded-2xl drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition text-center">
+                            <h6 class="">Education</h6>
+                            <div class="flex justify-center my-5">
+                                <svg class="h-20 w-20 text-[#885BF3]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                                 <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
                                 <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
                                 <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
                                 </svg>
                             </div>
                             <div class="px-10">
-                                <div class="flex items-center bg-white p-2">
+                                <div class="flex items-center p-2">
                                     <div class="flex-shrink-0 me-5">
-                                        <svg class="h-7 w-7 text-[#123458]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                        <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                        <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                        </svg>
+                                        <span class="inline-block h-3 w-3 rounded-full bg-[#885BF3]"></span>
 
                                     </div>
-                                    <div class="ml-4 text-sm text-left">
-                                        <p class="font-bold text-[#123458]">Bina Sarana Informatika University</p>
-                                        <p class="text-gray-600">Informatika</p>
-                                        <p class="text-sm text-gray-500 italic">Sep 2024 &nbsp; - &nbsp; Present</p>
+                                    <div class="ml-4 text-left">
+                                        <p class="text-sm font-bold text-[#DDE6ED]">Bina Sarana Informatika University</p>
+                                        <p class="text-xs text-[#885BF3]">Informatika</p>
+                                        <p class="text-xs text-gray-400 italic">Sep 2024 &nbsp; - &nbsp; Present</p>
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white p-2">
+                                <div class="flex items-center p-2">
                                     <div class="flex-shrink-0 me-5">
-                                        <svg class="h-7 w-7 text-[#123458]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                        <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                        <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                        </svg>
+                                        <span class="inline-block h-3 w-3 rounded-full bg-[#DDE6ED]"></span>
 
                                     </div>
-                                    <div class="ml-4 text-sm text-left">
-                                        <p class="font-bold text-[#123458]">SMK Wikrama Bogor</p>
-                                        <p class="text-gray-600">Software Engineer</p>
-                                        <p class="text-sm text-gray-500 italic">Jul 2020 &nbsp; - &nbsp; Jun 2023</p>
+                                    <div class="ml-4 text-left">
+                                        <p class="text-sm font-bold text-[#DDE6ED]">SMK Wikrama Bogor</p>
+                                        <p class="text-xs text-[#885BF3]">Software Engineer</p>
+                                        <p class="text-xs text-gray-400 italic">Jul 2020 &nbsp; - &nbsp; Jun 2023</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Experience Card -->
-                        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center">
-                            <h3 class="pb-2">Experience</h3>
-                            <div class="flex justify-center mb-4">
-                                <svg class="h-20 w-20 text-[#123458]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <div class="py-8 px-4 bg-[#030303] rounded-2xl drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition text-center">
+                            <h6 class="">Experience</h6>
+                            <div class="flex justify-center my-5">
+                                <svg class="h-20 w-20 text-[#885BF3]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                                 <path fill-rule="evenodd" d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
                                 <path d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
                                 </svg>
                             </div>
                             <div class="px-10">
-                                <div class="flex items-center bg-white p-2">
+                                <div class="flex items-center p-2">
                                     <div class="flex-shrink-0 me-5">
-                                        <svg class="h-7 w-7 text-[#123458]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                        <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                        <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                        </svg>
+                                        <span class="inline-block h-3 w-3 rounded-full bg-[#885BF3]"></span>
 
                                     </div>
-                                    <div class="ml-4 text-sm text-left">
-                                        <p class="font-bold text-[#123458]">PT CKL Indonesia Raya</p>
-                                        <p class="text-gray-600">Web Developer</p>
-                                        <p class="text-sm text-gray-500 italic">Sep 2023 &nbsp; - &nbsp; Present</p>
+                                    <div class="ml-4 text-left">
+                                        <p class="text-sm font-bold text-[#DDE6ED]">PT CKL Indonesia Raya</p>
+                                        <p class="text-xs text-[#885BF3]">Web Developer</p>
+                                        <p class="text-xs text-gray-400 italic">Sep 2023 &nbsp; - &nbsp; Present</p>
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white p-2">
+                                <div class="flex items-center p-2">
                                     <div class="flex-shrink-0 me-5">
-                                        <svg class="h-7 w-7 text-[#123458]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                        <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                        <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                        </svg>
+                                        <span class="inline-block h-3 w-3 rounded-full bg-[#DDE6ED]"></span>
 
                                     </div>
-                                    <div class="ml-4 text-sm text-left">
-                                        <p class="font-bold text-[#123458]">PT Immobi Solusi Prima</p>
-                                        <p class="text-gray-600">Fullstack Developer</p>
-                                        <p class="text-sm text-gray-500 italic">Jul 2022 &nbsp; - &nbsp; Jan 2023</p>
+                                    <div class="ml-4 text-left">
+                                        <p class="text-sm font-bold text-[#DDE6ED]">PT Immobi Solusi Prima</p>
+                                        <p class="text-xs text-[#885BF3]">Fullstack Developer</p>
+                                        <p class="text-xs text-gray-400 italic">Jul 2022 &nbsp; - &nbsp; Jan 2023</p>
                                     </div>
                                 </div>
                             </div>
@@ -308,24 +285,22 @@
                 </div>
             </div>
         </div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1EFEC" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,133.3C384,128,480,128,576,160C672,192,768,256,864,272C960,288,1056,256,1152,229.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- End Journey -->
 
     <!-- Project -->
-    <section id="project" class="pt-20 bg-[#F1EFEC] text-[#123458]">
+    <section id="project" class="py-20 bg-[#222222] text-[#DDE6ED]">
         <div class="max-w-6xl mx-auto px-6">
-            <!-- Section Title -->
+
             <div class="text-center mb-10">
-                <h3 class="text-xl uppercase font-bold pb-2">Project</h3>
-                <div class="mx-auto w-24 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
+                <h3 class="text-xl uppercase font-bold pb-2 [text-shadow:0_0_10px_#885BF3]">Project</h3>
+                <div class="mx-auto w-24 h-1 bg-gradient-to-r from-[#885BF3] to-[#DDE6ED] rounded"></div>
             </div>
 
             <!-- Carousel Wrapper -->
-            <div class="relative max-w-5xl mx-auto overflow-visible">
+            <div class="relative max-w-5xl mx-auto overflow-visible tracking-wide">
                 <!-- Card Container -->
-                <div class="overflow-hidden rounded-2xl shadow-lg bg-[#F8FAFC]">
+                <div class="overflow-hidden rounded-2xl shadow-lg bg-[#030303] drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition">
                     <div id="projectCarousel"
                         class="flex transition-transform duration-1000 ease-in-out"
                         style="transform: translateX(0%);">
@@ -337,12 +312,12 @@
                                     class="rounded-lg shadow-md max-h-[400px] object-cover w-full" />
                             </div>
                             <div>
-                                <h4 class="font-semibold text-lg mb-3">APRODITE</h4>
-                                <p class="text-sm text-[#123458] leading-relaxed mb-5">
+                                <h4 class="text-[#885BF3] font-semibold text-lg mb-3">Aprodite</h4>
+                                <p class="text-sm text-[#DDE6ED] leading-relaxed mb-5">
                                     The application is designed to assist teams in creating, managing, and tracking tasks and projects in detail. It is also intended as an alternative that teams can use to replace or extend the functionality typically offered by Jira. This application was developed during my internship at PT Immobi Solusi Prima.
                                 </p>
-                                <p class="text-gray-600">
-                                    <span class="font-bold">Tools: </span> React.js, Express.js, Ant Design & PostgreSQL.
+                                <p class="text-gray-400">
+                                    <span class="text-[#885BF3] font-bold">Tools: </span> React.js, Express.js, Ant Design & PostgreSQL.
                                 </p>
                             </div>
                         </div>
@@ -354,12 +329,12 @@
                                     class="rounded-lg shadow-md max-h-[400px] object-cover w-full" />
                             </div>
                             <div>
-                                <h4 class="font-semibold text-lg mb-3">Human Resources Information System</h4>
-                                <p class="text-sm text-[#123458] leading-relaxed mb-5">
+                                <h4 class="text-[#885BF3] font-semibold text-lg mb-3">Human Resources Information System</h4>
+                                <p class="text-sm text-[#DDE6ED] leading-relaxed mb-5">
                                     In this project, I revamped key HRIS features such as Presence, Permit, Sick & Other to improve usability and efficiency. I also developed the website and mobile APIs to support essential modules including Overtime, Booking Fleet, Payroll, Reimbursement, and Official Travel. These improvements made the system more integrated, accessible, and efficient for employees at PT CKL Indonesia Raya.
                                 </p>
-                                <p class="text-gray-600">
-                                    <span class="font-bold">Tools: </span> Metronic, CodeIgniter 4 & MySQL.
+                                <p class="text-gray-400">
+                                    <span class="text-[#885BF3] font-bold">Tools: </span> Metronic, CodeIgniter 4 & MySQL.
                                 </p>
                             </div>
                         </div>
@@ -371,12 +346,12 @@
                                     class="rounded-lg shadow-md max-h-[400px] object-cover w-full" />
                             </div>
                             <div>
-                                <h4 class="font-semibold text-lg mb-3">Ticketing IT Helpdesk</h4>
-                                <p class="text-sm text-[#123458] leading-relaxed mb-5">
+                                <h4 class="text-[#885BF3] font-semibold text-lg mb-3">Ticketing IT Helpdesk</h4>
+                                <p class="text-sm text-[#DDE6ED] leading-relaxed mb-5">
                                     In this project, I worked as a Backend Developer to build a web-based system that helps monitor and manage IT-related complaints from employees at PT CKL Indonesia Raya. The platform streamlines issue tracking and supports more efficient IT support processes.
                                 </p>
-                                <p class="text-gray-600">
-                                    <span class="font-bold">Tools: </span> Metronic, CodeIgniter 4 & MySQL.
+                                <p class="text-gray-400">
+                                    <span class="text-[#885BF3] font-bold">Tools: </span> Metronic, CodeIgniter 4 & MySQL.
                                 </p>
                             </div>
                         </div>
@@ -388,12 +363,12 @@
                                     class="rounded-lg shadow-md max-h-[400px] object-cover w-full" />
                             </div>
                             <div>
-                                <h4 class="font-semibold text-lg mb-3">Digilog</h4>
-                                <p class="text-sm text-[#123458] leading-relaxed mb-5">
+                                <h4 class="text-[#885BF3] font-semibold text-lg mb-3">Digilog</h4>
+                                <p class="text-sm text-[#DDE6ED] leading-relaxed mb-5">
                                     Digilog (Digital Logistics) is a logistics system developed by PT CKL Indonesia Raya, designed to support the process of goods data management, shipment tracking, and ensuring deliveries reach warehouses or customers. In this project, I served as a Backend Developer, focusing on API development and system integration.
                                 </p>
-                                <p class="text-gray-600">
-                                    <span class="font-bold">Tools: </span> Laravel & PostgreSQL.
+                                <p class="text-gray-400">
+                                    <span class="text-[#885BF3] font-bold">Tools: </span> Laravel & PostgreSQL.
                                 </p>
                             </div>
                         </div>
@@ -403,22 +378,22 @@
                 <!-- Mobile Buttons -->
                 <div class="flex justify-center gap-6 mt-4 md:hidden">
                     <button data-action="prev"
-                            class="carousel-btn bg-[#123458] text-white p-3 rounded-full shadow-md hover:bg-[#526D82] transition">
+                            class="carousel-btn bg-[#885BF3] text-white p-3 rounded-full drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition">
                     &#10094;
                     </button>
                     <button data-action="next"
-                            class="carousel-btn bg-[#123458] text-white p-3 rounded-full shadow-md hover:bg-[#526D82] transition">
+                            class="carousel-btn bg-[#885BF3] text-white p-3 rounded-full drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition">
                     &#10095;
                     </button>
                 </div>
 
                 <!-- Desktop Buttons -->
                 <button data-action="prev"
-                        class="carousel-btn hidden md:flex absolute top-1/2 left-0 -translate-y-1/2 -translate-x-12 bg-[#123458] text-white p-3 rounded-full shadow-md hover:bg-[#526D82] transition z-30 cursor-pointer">
+                        class="carousel-btn hidden md:flex absolute top-1/2 left-0 -translate-y-1/2 -translate-x-12 bg-[#885BF3] text-white p-3 rounded-full drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition z-30 cursor-pointer">
                     &#10094;
                 </button>
                 <button data-action="next"
-                        class="carousel-btn hidden md:flex absolute top-1/2 right-0 -translate-y-1/2 translate-x-12 bg-[#123458] text-white p-3 rounded-full shadow-md hover:bg-[#526D82] transition z-30 cursor-pointer">
+                        class="carousel-btn hidden md:flex absolute top-1/2 right-0 -translate-y-1/2 translate-x-12 bg-[#885BF3] text-white p-3 rounded-full drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition z-30 cursor-pointer">
                     &#10095;
                 </button>
             </div>
@@ -427,25 +402,20 @@
     <!-- End Project -->
 
     <!-- Skill -->
-    <section id="skill" class="bg-[#DDE6ED] text-[#123458]">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#F1EFEC" fill-opacity="1"
-            d="M0,288L48,293.3C96,299,192,309,288,293.3C384,277,480,235,576,224C672,213,768,235,864,218.7C960,203,1056,149,1152,144C1248,139,1344,181,1392,202.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-            </path>
-        </svg>
+    <section id="skill" class="py-20 bg-[#222222] text-[#DDE6ED]">
 
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-10">
-                <h3 class="text-xl uppercase font-bold pb-2">Tech-Stack</h3>
-                <div class="mx-auto w-25 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
+                <h3 class="text-xl uppercase font-bold pb-2 [text-shadow:0_0_10px_#885BF3]">Tech-Stack</h3>
+                <div class="mx-auto w-25 h-1 bg-gradient-to-r from-[#885BF3] to-[#DDE6ED] rounded"></div>
             </div>
 
             <div class="flex flex-wrap justify-center gap-8">
 
             <!-- Card 1: Front-end -->
-            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center w-full sm:w-[300px] max-w-md">
+            <div class="bg-[#030303] p-6 rounded-2xl drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition text-center w-full sm:w-[300px] max-w-md">
                 <h3 class="font-semibold uppercase">Front-end</h3>
-                <div class="mb-5 mx-auto w-5 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
+                <div class="mb-5 mx-auto w-5 h-1 bg-[#885BF3] rounded"></div>
                 <div class="flex flex-wrap justify-center gap-6">
                 <!-- HTML -->
                     <div class="flex flex-col items-center tooltip" data-tip="HTML5 • Expert">
@@ -511,9 +481,9 @@
             </div>
 
             <!-- Card 2: Back-end -->
-            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center w-full sm:w-[300px] max-w-md">
+            <div class="bg-[#030303] p-6 rounded-2xl drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition text-center w-full sm:w-[300px] max-w-md">
                 <h3 class="font-semibold uppercase">Back-end</h3>
-                <div class="mb-5 mx-auto w-5 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
+                <div class="mb-5 mx-auto w-5 h-1 bg-[#885BF3] rounded"></div>
                 <div class="flex flex-wrap justify-center gap-4">
                 <!-- Node.js -->
                     <div class="tooltip" data-tip="Node.js • Intermediate">
@@ -530,7 +500,7 @@
                     <!-- Express.js -->
                     <div class="tooltip" data-tip="Express.js • Beginner">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" 
-                            class="h-10 w-10 hover:scale-110 transition-transform" alt="Express.js" />
+                            class="h-10 w-10 hover:scale-110 transition-transform brightness-0 invert" alt="Express.js" />
                     </div>
 
                     <!-- Adonis.js -->
@@ -554,9 +524,9 @@
             </div>
 
             <!-- Card 3: Database -->
-            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center w-full sm:w-[300px] max-w-md">
+            <div class="bg-[#030303] p-6 rounded-2xl drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition text-center w-full sm:w-[300px] max-w-md">
                 <h3 class="font-semibold uppercase">Database</h3>
-                <div class="mb-5 mx-auto w-5 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
+                <div class="mb-5 mx-auto w-5 h-1 bg-[#885BF3] rounded"></div>
                 <div class="flex flex-wrap justify-center gap-4">
                     <!-- MySQL -->
                     <div class="tooltip" data-tip="MySQL • Intermediate">
@@ -573,9 +543,9 @@
             </div>
 
             <!-- Card 4: Development Tools -->
-            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center w-full sm:w-[300px] max-w-md">
+            <div class="bg-[#030303] p-6 rounded-2xl drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition text-center w-full sm:w-[300px] max-w-md">
                 <h3 class="font-semibold uppercase">Development Tools</h3>
-                <div class="mb-5 mx-auto w-5 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
+                <div class="mb-5 mx-auto w-5 h-1 bg-[#885BF3] rounded"></div>
                 <div class="flex flex-wrap justify-center gap-4">
                 <!-- VS Code -->
                     <div class="tooltip" data-tip="VS Code">
@@ -592,7 +562,7 @@
                     <!-- GitHub -->
                     <div class="tooltip" data-tip="GitHub">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                            class="h-10 w-10 hover:scale-110 transition-transform" alt="GitHub" />
+                            class="h-10 w-10 hover:scale-110 transition-transform brightness-0 invert" alt="GitHub" />
                     </div>
 
                     <!-- GitLab -->
@@ -628,9 +598,9 @@
             </div>
 
             <!-- Card: Task Management -->
-            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition text-center w-full sm:w-[300px] max-w-md">
+            <div class="bg-[#030303] p-6 rounded-2xl drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition text-center w-full sm:w-[300px] max-w-md">
                 <h3 class="font-semibold uppercase">Task Management</h3>
-                <div class="mb-5 mx-auto w-5 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
+                <div class="mb-5 mx-auto w-5 h-1 bg-[#885BF3] rounded"></div>
 
                 <div class="flex flex-wrap justify-center gap-4">
                     <!-- Jira -->
@@ -645,8 +615,7 @@
                     </div>
                     <!-- Notion -->
                     <div class="tooltip" data-tip="Notion">
-                        <img src="https://cdn.simpleicons.org/notion/000000"
-                            class="h-10 w-10 hover:scale-110 transition-transform" alt="Notion" />
+                        <img src="https://cdn.simpleicons.org/notion/000000" class="h-10 w-10 hover:scale-110 transition-transform brightness-0 invert" alt="Notion" />
                     </div>
                 </div>
             </div>
@@ -656,20 +625,19 @@
     <!-- End Skill -->
 
     <!-- Certificate -->
-    <section id="certificate" class="bg-[#F1EFEC] text-[#123458]">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#DDE6ED" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,213.3C384,224,480,192,576,192C672,192,768,224,864,218.7C960,213,1056,171,1152,138.7C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <section id="certificate" class="py-20 bg-[#222222] text-[#DDE6ED]">
 
         <div class="max-w-6xl mx-auto px-6">
             <!-- Section Title -->
             <div class="text-center mb-10">
-                <h3 class="text-xl uppercase font-bold pb-2">Certificate</h3>
-                <div class="mx-auto w-25 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
+                <h3 class="text-xl uppercase font-bold pb-2 [text-shadow:0_0_10px_#885BF3]">Certificate</h3>
+                <div class="mx-auto w-25 h-1 bg-gradient-to-r from-[#885BF3] to-[#DDE6ED] rounded"></div>
             </div>
 
             <!-- Carousel Wrapper -->
-            <div class="relative max-w-4xl mx-auto">
+            <div class="relative max-w-4xl mx-auto tracking-wide">
                 <!-- Card Container -->
-                <div class="overflow-hidden rounded-2xl shadow-lg bg-white">
+                <div class="overflow-hidden rounded-2xl shadow-lg bg-[#030303] drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition">
                     <div id="certificateCarousel"
                         class="flex transition-transform duration-1000 ease-in-out"
                         style="transform: translateX(0%);">
@@ -765,22 +733,22 @@
                 <!-- Mobile Buttons -->
                 <div class="flex justify-center gap-6 mt-4 md:hidden">
                     <button data-action="prev"
-                        class="cert-btn bg-[#123458] text-white p-3 rounded-full shadow-md hover:bg-[#526D82] transition">
+                        class="cert-btn bg-[#885BF3] text-white p-3 rounded-full drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition">
                         &#10094;
                     </button>
                     <button data-action="next"
-                        class="cert-btn bg-[#123458] text-white p-3 rounded-full shadow-md hover:bg-[#526D82] transition">
+                        class="cert-btn bg-[#885BF3] text-white p-3 rounded-full drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition">
                         &#10095;
                     </button>
                 </div>
 
                 <!-- Desktop Buttons -->
                 <button data-action="prev"
-                    class="cert-btn hidden md:flex absolute top-1/2 left-0 -translate-y-1/2 -translate-x-12 bg-[#123458] text-white p-3 rounded-full shadow-md hover:bg-[#526D82] transition z-10 cursor-pointer">
+                    class="cert-btn hidden md:flex absolute top-1/2 left-0 -translate-y-1/2 -translate-x-12 bg-[#885BF3] text-white p-3 rounded-full drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition z-10 cursor-pointer">
                     &#10094;
                 </button>
                 <button data-action="next"
-                    class="cert-btn hidden md:flex absolute top-1/2 right-0 -translate-y-1/2 translate-x-12 bg-[#123458] text-white p-3 rounded-full shadow-md hover:bg-[#526D82] transition z-10 cursor-pointer">
+                    class="cert-btn hidden md:flex absolute top-1/2 right-0 -translate-y-1/2 translate-x-12 bg-[#885BF3] text-white p-3 rounded-full drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition z-10 cursor-pointer">
                     &#10095;
                 </button>
             </div>
@@ -789,15 +757,14 @@
     <!-- End Certificate -->
 
     <!-- Contact -->
-    <section id="contact" class="pb-20 bg-[#DDE6ED] text-[#123458]">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1EFEC" fill-opacity="1" d="M0,320L48,272C96,224,192,128,288,112C384,96,480,160,576,170.7C672,181,768,139,864,128C960,117,1056,139,1152,154.7C1248,171,1344,181,1392,186.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <section id="contact" class="py-20 bg-[#222222] text-[#DDE6ED]">
 
-        <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-6xl mx-auto px-6 tracking-wide">
             <!-- Section Title -->
             <div class="text-center mb-10">
-                <h3 class="text-xl uppercase font-bold pb-2">Contact</h3>
-                <div class="mx-auto w-25 h-1 bg-gradient-to-r from-[#123458] to-[#526D82] rounded"></div>
-                <p class="mt-3 text-base text-gray-600">
+                <h3 class="text-xl uppercase font-bold pb-2 [text-shadow:0_0_10px_#885BF3]">Contact</h3>
+                <div class="mx-auto w-25 h-1 bg-gradient-to-r from-[#885BF3] to-[#DDE6ED] rounded"></div>
+                <p class="mt-3 text-[#DDE6ED]">
                     If you would like to discuss or collaborate, please contact me via the form or the contact information.
                 </p>
             </div>
@@ -805,20 +772,20 @@
             <!-- Content -->
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Contact Form -->
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+                <div class="bg-[#030303] p-8 rounded-2xl shadow-md hover:shadow-lg transition">
                     <form id="contact-form" action="https://formspree.io/f/mjkekngo" method="POST" class="space-y-5">
                         <!-- Email -->
                         <div>
-                            <label for="email" class="block text-sm font-medium mb-1 text-left">Your Email</label>
+                            <label for="email" class="block text-sm font-bold mb-1 text-left">Your Email</label>
                             <input type="email" id="email" name="email" placeholder="you@example.com" required 
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#526D82]" />
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#885BF3]" />
                         </div>
 
                         <!-- Message -->
                         <div>
-                            <label for="message" class="block text-sm font-medium mb-1 text-left">Your Message</label>
+                            <label for="message" class="block text-sm font-bold mb-1 text-left">Your Message</label>
                             <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required 
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#526D82]"></textarea>
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#885BF3]"></textarea>
                         </div>
 
                         <!-- Alert -->
@@ -830,7 +797,7 @@
                         </div>
 
                         <!-- Submit Button -->
-                        <button id="submit-btn" type="submit" class="w-full py-3 bg-[#123458] text-white rounded-lg font-semibold hover:bg-[#526D82] transition flex items-center justify-center gap-2 uppercase text-sm tracking-widest">
+                        <button id="submit-btn" type="submit" class="w-full py-3 bg-[#885BF3] text-white p-3 rounded-lg drop-shadow-[0_0_1px_#885BF3] hover:drop-shadow-[0_0_3px_#885BF3] transition flex items-center justify-center gap-2 uppercase text-sm cursor-pointer">
                             <span id="btn-text">Send Message</span>
                             <svg id="btn-spinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -844,7 +811,7 @@
                 <div class="flex flex-col justify-center space-y-6">
                     <div>
                         <h4 class="font-semibold text-xl mb-2">Get in Touch</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">
+                        <p class="text-[#DDE6ED] text-sm leading-relaxed">
                             I am open to job opportunities, freelance projects, or simply a discussion. Please contact me through the following contact information:
                         </p>
                     </div>
@@ -852,22 +819,22 @@
                     <!-- Info List -->
                     <div class="space-y-4">
                         <div class="flex items-center gap-3">
-                            <i data-lucide="mail" class="w-5 h-5 text-[#123458]"></i>
-                            <a href="mailto:melawatii@hotmail.com" class="text-sm text-gray-700 hover:underline">
+                            <i data-lucide="mail" class="w-5 h-5 text-[#885BF3]"></i>
+                            <a href="mailto:melawatii@hotmail.com" class="text-sm text-[#DDE6ED] hover:underline">
                                 melawatii@hotmail.com
                             </a>
                         </div>
 
                         <div class="flex items-center gap-3">
-                            <i data-lucide="phone" class="w-5 h-5 text-[#123458]"></i>
-                            <a href="https://wa.me/6282124390154" target="_blank" class="text-sm text-gray-700 hover:underline">
+                            <i data-lucide="phone" class="w-5 h-5 text-[#885BF3]"></i>
+                            <a href="https://wa.me/6282124390154" target="_blank" class="text-sm text-[#DDE6ED] hover:underline">
                                 +62 821-2439-0154
                             </a>
                         </div>
 
                         <div class="flex items-center gap-3">
-                            <i data-lucide="map-pin" class="w-5 h-5 text-[#123458]"></i>
-                            <p class="text-sm text-gray-700">Bogor, Indonesia</p>
+                            <i data-lucide="map-pin" class="w-5 h-5 text-[#885BF3]"></i>
+                            <p class="text-sm text-[#DDE6ED]">Bogor, Indonesia</p>
                         </div>
                     </div>
 
@@ -875,19 +842,19 @@
                     <div class="flex gap-5 pt-4">
                         <!-- GitHub -->
                         <a href="https://github.com/melawatii" target="_blank" rel="noopener"
-                            class="text-[#123458] hover:text-[#526D82]">
+                            class="text-[#885BF3] hover:text-[#526D82]">
                             <i data-lucide="github" class="w-6 h-6"></i>
                         </a>
 
                         <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/melawati-859a59189/" target="_blank" rel="noopener"
-                            class="text-[#123458] hover:text-[#526D82]">
+                            class="text-[#885BF3] hover:text-[#526D82]">
                             <i data-lucide="linkedin" class="w-6 h-6"></i>
                         </a>
 
                         <!-- Instagram -->
                         <a href="https://www.instagram.com/mela.watii_" target="_blank" rel="noopener"
-                            class="text-[#123458] hover:text-[#526D82]">
+                            class="text-[#885BF3] hover:text-[#526D82]">
                             <i data-lucide="instagram" class="w-6 h-6"></i>
                         </a>
                     </div>
@@ -899,7 +866,7 @@
     <!-- End Contact -->
 
     <!-- Footer -->
-    <footer class="bg-[#123458] text-[#DDE6ED] shadow-sm font-semibold py-6 tracking-wider">
+    <footer class="bg-[#030303] text-[#DDE6ED] shadow-sm font-semibold py-6 tracking-wider">
         <div class="max-w-6xl mx-auto px-6 flex justify-center">
             <p class="text-sm">
             © <span id="year"></span> MELAWATI &nbsp; • &nbsp; Designed & Developed by Me.
